@@ -26,10 +26,10 @@
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Welcome to"
-                android:textColor="#000"
                 android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="Welcome too"
+                android:textColor="#000"
                 android:textSize="25dp" />
 
             <TextView
