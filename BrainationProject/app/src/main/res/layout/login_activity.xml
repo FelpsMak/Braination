@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Welcome To"
+                android:text="Welcome to"
                 android:textColor="#000"
                 android:layout_marginTop="18dp"
                 android:textSize="25dp" />
