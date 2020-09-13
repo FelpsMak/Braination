@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tela1">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="122dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/livro" />
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#FD000000"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/borda2"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textTurma"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="Turma"
+            android:textColor="#FA0C0A0A" />
+
+        <EditText
+            android:id="@+id/editTextTurma"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/borda2"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#070606"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/borda2"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="501dp" />
+
+        <TextView
+            android:id="@+id/textPassword"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#0E0A0A" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/borda2"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="320dp"
+            android:layout_height="61dp"
+            app:srcCompat="@drawable/Linha" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borda3"
+            android:text="Register"
+            android:textColor="#FDE9E0E0" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
