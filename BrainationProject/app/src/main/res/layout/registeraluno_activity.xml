@@ -108,7 +108,7 @@
             android:id="@+id/btnRegister"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/borda3"
+            android:background="@drawable/bordab"
             android:text="Register"
             android:textColor="#FDE9E0E0" />
 
