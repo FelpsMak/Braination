@@ -86,7 +86,7 @@
             android:id="@+id/textPassword"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:text="Password"
+            android:text="Pass"
             android:textColor="#0E0A0A" />
 
         <EditText
