@@ -11,7 +11,7 @@ public class PessoasCadastro extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro_pessoal);
+        setContentView(R.layout.principal_activity);
     }
 
     public void professor(View view) {
