@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         btnRegister=findViewById(R.id.register_principal);
         btnRegister.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, PessoasCadastro.class));
+                startActivity(new Intent(MainActivity.this, PessoascadastroActivity.class));
             }
         });
     }

@@ -39,7 +39,7 @@
                 app:srcCompat="@drawable/linha" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/imageprof"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="professor"
@@ -47,7 +47,7 @@
                 app:srcCompat="@drawable/component" />
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/imagecoord"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="coordenacao"

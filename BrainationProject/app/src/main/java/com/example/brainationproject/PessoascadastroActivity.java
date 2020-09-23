@@ -6,10 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class PessoascadastroActivity extends AppCompatActivity {
     ImageView imgAluno;
+    ImageView imgProfessor;
+    ImageView imgCoordenação;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,11 +18,23 @@ public class PessoascadastroActivity extends AppCompatActivity {
     }
 
     public void professor(View view) {
-        Toast.makeText(getApplicationContext(), "Projeto em andamento", Toast.LENGTH_SHORT).show();
+        imgProfessor=findViewById(R.id.imageprof);
+        imgProfessor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PessoascadastroActivity.this,RegisterprofActivity.class));
+            }
+        });
     }
 
     public void coordenacao(View view) {
-        Toast.makeText(getApplicationContext(), "Projeto em andamento", Toast.LENGTH_SHORT).show();
+        imgCoordenação=findViewById(R.id.imagecoord);
+        imgCoordenação.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PessoascadastroActivity.this, RegistercoordActivity.class));
+            }
+        });
     }
 
     public void alunos(View view) {
