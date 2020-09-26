@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "152339069025",
+    "firebase_url": "https://braination-e53cf.firebaseio.com",
+    "project_id": "braination-e53cf",
+    "storage_bucket": "braination-e53cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152339069025:android:4bc7a86e33ec7bade91220",
+        "android_client_info": {
+          "package_name": "com.example.brainationproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152339069025-k4fftdv07k2oaq399p8g4v8j3e7dv8ac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.brainationproject",
+            "certificate_hash": "a8412f170e26b3eb96b9febade400806d8639919"
+          }
+        },
+        {
+          "client_id": "152339069025-s1hhomcuic3e1pb8oda8qma5ltor8mrs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrSbNZWx-s71baGwqlBubI574v_bEjJu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152339069025-s1hhomcuic3e1pb8oda8qma5ltor8mrs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -34,13 +34,14 @@
         android:textColor="#000"/>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/email_text_login"
         android:layout_width="326dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/borda"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:textColor="#1F1F1F"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="146dp" />
     <TextView
@@ -49,14 +50,16 @@
         android:text="Password"
         android:layout_marginStart="43dp"
         android:textColor="#000"/>
+
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/pass_text_login"
         android:layout_width="326dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/borda"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="#1F1F1F"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="146dp" />
 
