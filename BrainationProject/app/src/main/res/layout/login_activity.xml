@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/telaclara">
+    android:background="@drawable/WallpaperClaro">
 
     <ImageView
         android:id="@+id/image_login_voltar"
@@ -16,8 +16,8 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,8 @@
 
     <EditText
         android:id="@+id/email_text_login"
-        android:layout_width="326dp"
+        android:layout_width="300dp"
+        android:layout_marginTop="5dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/borda"
@@ -49,11 +50,14 @@
         android:layout_height="wrap_content"
         android:text="Password"
         android:layout_marginStart="43dp"
+        android:layout_marginTop="5dp"
+
         android:textColor="#000"/>
 
     <EditText
         android:id="@+id/pass_text_login"
-        android:layout_width="326dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:background="@drawable/borda"
@@ -63,19 +67,12 @@
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="146dp" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="326dp"
-        android:layout_height="47dp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/linha"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="131dp" />
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="326dp"
+        android:layout_width="300dp"
         android:layout_gravity="center"
+        android:layout_marginTop="40dp"
         android:layout_height="52dp"
         android:text="Login"
         android:textColor="#D5D2D2"
@@ -87,6 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Forgot your password?"
+        android:layout_marginTop="10dp"
         android:textColor="#000"
         />
 

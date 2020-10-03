@@ -2,6 +2,8 @@ package com.example.brainationproject;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -46,7 +48,10 @@ public class LoginActivity extends AppCompatActivity {
         imgVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.move_direita,R.anim.fade_out);
+                ActivityCompat.startActivity(LoginActivity.this,intent,activityOptionsCompat.toBundle());
+                startActivity(intent);
             }
         });
 

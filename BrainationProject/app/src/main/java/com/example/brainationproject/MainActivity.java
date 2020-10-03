@@ -1,6 +1,8 @@
 package com.example.brainationproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,7 +20,10 @@ public class MainActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.login_principal);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,LoginActivity.class));
+                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+                ActivityOptionsCompat activityOptionsCompat =ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.move_esquerda,R.anim.fade_in);
+                ActivityCompat.startActivity(MainActivity.this,intent,activityOptionsCompat.toBundle());
+                startActivity(intent);
             }
         });
         btnRegister=findViewById(R.id.register_principal);

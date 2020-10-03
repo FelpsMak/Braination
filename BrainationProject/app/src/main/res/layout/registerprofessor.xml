@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/tela1">
+    android:background="@drawable/WallpaperNormal">
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="122dp"
-        android:layout_height="90dp"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
         android:layout_marginStart="144dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="145dp"
