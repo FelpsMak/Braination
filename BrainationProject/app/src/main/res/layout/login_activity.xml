@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/WallpaperClaro">
+    android:background="@drawable/wallpaperclaro">
 
     <ImageView
-        android:id="@+id/image_login_voltar"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_gravity="end"
-        android:src="@drawable/ic_arrow_forward_black_24dp"/>
+        android:id="@+id/imageView"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        app:srcCompat="@drawable/iconvoltar2"
+        android:layout_marginTop="5dp"/>
 
     <ImageView
         android:id="@+id/imageView4"
@@ -71,12 +71,22 @@
     <Button
         android:id="@+id/btn_login"
         android:layout_width="300dp"
+        android:layout_height="52dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
+        android:background="@drawable/bordab"
+        android:text="Login Professor"
+        android:textColor="#D5D2D2" />
+
+    <Button
+        android:id="@+id/btn_login_aluno"
+        android:layout_width="300dp"
         android:layout_height="52dp"
-        android:text="Login"
-        android:textColor="#D5D2D2"
-        android:background="@drawable/borda3"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bordab"
+        android:text="Login Aluno"
+        android:textColor="#D5D2D2"/>
 
     <TextView
         android:id="@+id/forgot_password"

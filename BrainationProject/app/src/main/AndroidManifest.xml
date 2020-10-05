@@ -10,9 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity"/>
-        <activity android:name=".AnotacoesActivity"></activity>
-        <activity android:name=".AnotaceosAdapterActivity"></activity>
-        <activity android:name=".ListaActivity"></activity>
+        <activity android:name=".ListaProfActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".PessoascadastroActivity"></activity>
         <activity android:name=".RegisteralunoActivity"></activity>
         <activity android:name=".MainActivity">

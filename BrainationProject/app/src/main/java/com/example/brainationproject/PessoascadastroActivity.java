@@ -5,12 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class PessoascadastroActivity extends AppCompatActivity {
-    ImageView imgAluno;
-    ImageView imgProfessor;
-    ImageView imgCoordenação;
+    Button btnProfessor,btnAluno;
     ImageView imgBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +17,7 @@ public class PessoascadastroActivity extends AppCompatActivity {
         setContentView(R.layout.pessoas_cadastro_activity);
     }
     public void backprincipal(View view) {
-        imgBack = findViewById(R.id.image_login_voltar_cadastro);
+        imgBack = findViewById(R.id.iconvoltaresq);
         imgBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,8 +26,8 @@ public class PessoascadastroActivity extends AppCompatActivity {
         });
     }
     public void professor(View view) {
-        imgProfessor=findViewById(R.id.imageprof);
-        imgProfessor.setOnClickListener(new View.OnClickListener() {
+        btnProfessor=findViewById(R.id.btn_prof_cad);
+        btnProfessor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(PessoascadastroActivity.this,RegisterprofActivity.class));
@@ -36,19 +35,9 @@ public class PessoascadastroActivity extends AppCompatActivity {
         });
     }
 
-    public void coordenacao(View view) {
-        imgCoordenação=findViewById(R.id.imagecoord);
-        imgCoordenação.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(PessoascadastroActivity.this, RegistercoordActivity.class));
-            }
-        });
-    }
-
     public void alunos(View view) {
-        imgAluno=findViewById(R.id.imagealuno);
-        imgAluno.setOnClickListener(new View.OnClickListener() {
+        btnAluno=findViewById(R.id.btn_aluno_cad);
+        btnAluno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(PessoascadastroActivity.this,RegisteralunoActivity.class));

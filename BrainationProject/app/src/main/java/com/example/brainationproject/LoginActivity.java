@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     EditText cxemail;
     EditText cxpass;
-    Button btnLogin;
+    Button btnLogin, btnLoginAluno;
     TextView txtRegister;
     ImageView imgVoltar;
 
@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
-        imgVoltar=findViewById(R.id.image_login_voltar);
+        imgVoltar=findViewById(R.id.iconvoltaresq);
         cxemail=findViewById(R.id.email_text_login);
         cxpass=findViewById(R.id.pass_text_login);
 
@@ -73,6 +73,14 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+        btnLoginAluno=findViewById(R.id.btn_login_aluno);
+        btnLoginAluno.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this,ListaProfActivity.class));
+            }
+        });
+
         txtRegister=findViewById(R.id.forgot_password);
         txtRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = mAuth.getCurrentUser();
-                            startActivity(new Intent(LoginActivity.this, ListaActivity.class));
+                            startActivity(new Intent(LoginActivity.this, ListaProfActivity.class));
 
                         } else {
                             // If sign in fails, display a message to the user.

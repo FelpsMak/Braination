@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/WallpaperNormal">
+    android:background="@drawable/wallpapernormal">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -105,12 +105,13 @@
             app:srcCompat="@drawable/linha" />
 
         <Button
-            android:id="@+id/btnRegister"
+            android:id="@+id/btnRegisterP"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:background="@drawable/bordab"
             android:text="Register"
-            android:textColor="#FDE9E0E0" />
+            android:textColor="#FDE9E0E0"
+            android:onClick="sussa2"/>
 
     </LinearLayout>
 

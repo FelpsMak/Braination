@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/WallpaperEscuroo">
+    android:background="@drawable/wallpaperescuro">
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="150dp"
@@ -29,13 +29,15 @@
         android:id="@+id/login_principal"
         android:layout_width="300dp"
         android:layout_height="48dp"
-        android:layout_marginTop="270dp"
         android:layout_gravity="center"
-        android:text="Login"
-        android:textSize="18dp"
-        android:textColor="#FFF"
+        android:layout_marginTop="270dp"
         android:background="@drawable/borda3"
+        android:text="Login "
+        android:textColor="#FFF"
+        android:textSize="18dp"
+
         />
+
     <Button
         android:id="@+id/register_principal"
         android:layout_width="300dp"
