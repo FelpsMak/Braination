@@ -33,7 +33,10 @@ public class MainActivity extends AppCompatActivity {
         btnRegister=findViewById(R.id.register_principal);
         btnRegister.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, PessoascadastroActivity.class));
+                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+                ActivityOptionsCompat activityOptionsCompat =ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.move_direita,R.anim.fade_in);
+                ActivityCompat.startActivity(MainActivity.this,intent,activityOptionsCompat.toBundle());
+                startActivity(new Intent(MainActivity.this,LoginActivity.class));
             }
         });
     }
