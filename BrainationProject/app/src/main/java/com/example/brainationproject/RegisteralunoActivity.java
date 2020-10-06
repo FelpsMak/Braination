@@ -14,7 +14,7 @@ public class RegisteralunoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registeraluno_activity);
-        btnRegister=findViewById(R.id.btnRegisterP);
+        btnRegister=findViewById(R.id.btnRegisterA);
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

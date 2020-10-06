@@ -20,7 +20,7 @@ public class ListaProfActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_prof);
+        setContentView(R.layout.activity_main);
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -32,7 +32,7 @@ public class ListaProfActivity extends AppCompatActivity {
         drawerLayout=findViewById(R.id.drawer);
         navigationView=findViewById(R.id.nav_view);
 
-        toggle= new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);
+        toggle= new ActionBarDrawerToggle(this,drawerLayout, toolbar,R.string.open,R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.setDrawerIndicatorEnabled(true);
         toggle.syncState();

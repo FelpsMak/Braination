@@ -21,22 +21,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.principal_activity);
 
-        btnLogin = findViewById(R.id.login_principal);
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
-                ActivityOptionsCompat activityOptionsCompat =ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.move_esquerda,R.anim.fade_in);
-                ActivityCompat.startActivity(MainActivity.this,intent,activityOptionsCompat.toBundle());
-                startActivity(new Intent(MainActivity.this,LoginActivity.class));
-            }
-        });
         btnRegister=findViewById(R.id.register_principal);
-        btnRegister.setOnClickListener(new View.OnClickListener() {
+        btnLogin = findViewById(R.id.login_principal);
+
+
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,LoginActivity.class);
                 ActivityOptionsCompat activityOptionsCompat =ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.move_direita,R.anim.fade_in);
                 ActivityCompat.startActivity(MainActivity.this,intent,activityOptionsCompat.toBundle());
-                startActivity(new Intent(MainActivity.this,LoginActivity.class));
+            }
+        });
+
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,PessoascadastroActivity.class);
+                ActivityOptionsCompat activityOptionsCompat =ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.move_esquerda,R.anim.fade_in);
+                ActivityCompat.startActivity(MainActivity.this,intent,activityOptionsCompat.toBundle());
+
             }
         });
     }

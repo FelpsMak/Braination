@@ -105,7 +105,7 @@
             app:srcCompat="@drawable/linha" />
 
         <Button
-            android:id="@+id/btnRegisterP"
+            android:id="@+id/btnRegisterA"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:background="@drawable/bordab"

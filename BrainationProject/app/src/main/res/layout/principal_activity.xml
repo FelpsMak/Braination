@@ -16,7 +16,8 @@
         android:layout_marginTop="60dp"
         app:srcCompat="@drawable/livro"
         tools:layout_editor_absoluteY="73dp" />
-    <EditText
+
+    <TextView
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
@@ -33,21 +34,21 @@
         android:layout_marginTop="270dp"
         android:background="@drawable/borda3"
         android:text="Login "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#FFF"
-        android:textSize="18dp"
 
-        />
+        android:textSize="18dp" />
 
     <Button
         android:id="@+id/register_principal"
         android:layout_width="300dp"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:text="Register"
-        android:textSize="18dp"
-        android:textColor="#000"
+        android:layout_marginTop="20dp"
         android:background="@drawable/borda"
-        />
+        android:text="Register"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000"
+        android:textSize="18dp" />
 
 </LinearLayout>

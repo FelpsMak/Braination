@@ -8,13 +8,6 @@
     android:background="@drawable/wallpaperclaro">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
-        app:srcCompat="@drawable/iconvoltar2"
-        android:layout_marginTop="5dp"/>
-
-    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -28,16 +21,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
-        android:layout_marginStart="43dp"
         android:text="Email"
-        android:textColor="#000"/>
+        android:textColor="#000"
+        android:textSize="17sp" />
 
     <EditText
         android:id="@+id/email_text_login"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="50dp"
         android:layout_marginTop="5dp"
         android:layout_height="55dp"
+        android:paddingHorizontal="10dp"
         android:layout_gravity="center"
         android:background="@drawable/borda"
         android:ems="10"
@@ -45,20 +41,25 @@
         android:textColor="#1F1F1F"
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="146dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"
-        android:layout_marginStart="43dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="5dp"
+        android:text="Password"
+        android:textColor="#000"
+        android:textSize="17sp"
 
-        android:textColor="#000"/>
+        />
 
     <EditText
         android:id="@+id/pass_text_login"
         android:layout_marginTop="5dp"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="55dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="50dp"
         android:layout_gravity="center"
         android:background="@drawable/borda"
         android:ems="10"
@@ -69,34 +70,40 @@
 
 
     <Button
-        android:id="@+id/btn_login"
-        android:layout_width="300dp"
+        android:id="@+id/btn_login_professor"
+        android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_gravity="center"
+        android:layout_marginHorizontal="50dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/bordab"
+        android:background="@drawable/borda3"
         android:text="Login Professor"
-        android:textColor="#D5D2D2" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btn_login_aluno"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_gravity="center"
+        android:layout_marginHorizontal="50dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/bordab"
+        android:background="@drawable/borda3"
         android:text="Login Aluno"
-        android:textColor="#D5D2D2"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Forgot your password?"
         android:layout_marginTop="10dp"
+        android:text="Forgot your password?"
         android:textColor="#000"
-        />
+        android:textSize="16sp" />
 
 
 </LinearLayout>

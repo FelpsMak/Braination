@@ -28,9 +28,8 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     EditText cxemail;
     EditText cxpass;
-    Button btnLogin, btnLoginAluno;
+    Button btnLoginAluno, btnLoginProfessor;
     TextView txtRegister;
-    ImageView imgVoltar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,24 +38,14 @@ public class LoginActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
-        imgVoltar=findViewById(R.id.iconvoltaresq);
         cxemail=findViewById(R.id.email_text_login);
         cxpass=findViewById(R.id.pass_text_login);
 
 
 
-        imgVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.move_direita,R.anim.fade_out);
-                ActivityCompat.startActivity(LoginActivity.this,intent,activityOptionsCompat.toBundle());
-                startActivity(intent);
-            }
-        });
 
-        btnLogin=findViewById(R.id.btn_login);
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnLoginAluno=findViewById(R.id.btn_login_aluno);
+        btnLoginAluno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email, password;
@@ -73,8 +62,8 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-        btnLoginAluno=findViewById(R.id.btn_login_aluno);
-        btnLoginAluno.setOnClickListener(new View.OnClickListener() {
+        btnLoginProfessor=findViewById(R.id.btn_login_professor);
+        btnLoginProfessor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this,ListaProfActivity.class));

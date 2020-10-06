@@ -16,41 +16,49 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="80dp"
         android:layout_height="100dp"
         android:layout_marginStart="15dp"
         android:src="@drawable/iconeprofessor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:layout_width="50dp"
         android:layout_height="25dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginStart="105dp"
-        android:textSize="12dp"
-        android:textColor="#3C72FF"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
         android:text="Turmas"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:textColor="#3C72FF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/SPIN"
+        app:layout_constraintStart_toStartOf="@+id/SPIN"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Spinner
         android:id="@+id/SPIN"
-        android:layout_width="250dp"
-        android:layout_marginTop="39dp"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/borda_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.507" />
 
-        android:layout_height="32dp"
-        android:layout_marginStart="105dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
     <ImageView
         android:layout_width="15dp"
         android:layout_height="15dp"
+        android:layout_marginEnd="15dp"
         android:src="@drawable/iconescrowls"
-        android:layout_marginTop="47dp"
-        android:layout_marginStart="330dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
+        app:layout_constraintBottom_toBottomOf="@+id/SPIN"
+        app:layout_constraintEnd_toEndOf="@+id/SPIN"
+        app:layout_constraintTop_toTopOf="@+id/SPIN" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
@@ -60,6 +68,10 @@
         android:background="#fff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:outlineAmbientShadowColor="#3C72FF"
+        android:outlineSpotShadowColor="#3C72FF"
+        app:tabIndicatorColor="#3C72FF"
+        app:tabSelectedTextColor="#3C72FF"
         app:layout_constraintTop_toTopOf="@+id/toolbar">
 
         <com.google.android.material.tabs.TabItem
@@ -83,10 +95,23 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
-        android:layout_width="409dp"
-        android:layout_height="625dp"
-        android:layout_marginTop="1dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531"
+        app:srcCompat="@drawable/icone3linhas1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
