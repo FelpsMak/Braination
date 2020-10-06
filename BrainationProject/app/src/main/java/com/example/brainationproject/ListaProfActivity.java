@@ -1,6 +1,8 @@
 package com.example.brainationproject;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,13 +15,19 @@ public class ListaProfActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView navigationView;
+    Spinner sistemas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_lista_prof);
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        sistemas=(Spinner) findViewById(R.id.SPIN);
+
+        ArrayAdapter adapter= ArrayAdapter.createFromResource(this,R.array.sistemas_mobile, android.R.layout.simple_spinner_item);
+        sistemas.setAdapter(adapter);
 
         drawerLayout=findViewById(R.id.drawer);
         navigationView=findViewById(R.id.nav_view);

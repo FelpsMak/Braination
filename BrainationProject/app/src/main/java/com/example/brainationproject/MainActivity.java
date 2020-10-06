@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,LoginActivity.class);
                 ActivityOptionsCompat activityOptionsCompat =ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.move_esquerda,R.anim.fade_in);
                 ActivityCompat.startActivity(MainActivity.this,intent,activityOptionsCompat.toBundle());
-                startActivity(intent);
+                startActivity(new Intent(MainActivity.this,LoginActivity.class));
             }
         });
         btnRegister=findViewById(R.id.register_principal);
