@@ -41,9 +41,6 @@ public class LoginActivity extends AppCompatActivity {
         cxemail=findViewById(R.id.email_text_login);
         cxpass=findViewById(R.id.pass_text_login);
 
-
-
-
         btnLoginAluno=findViewById(R.id.btn_login_aluno);
         btnLoginAluno.setOnClickListener(new View.OnClickListener() {
             @Override

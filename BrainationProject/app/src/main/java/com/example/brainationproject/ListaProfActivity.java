@@ -16,23 +16,24 @@ public class ListaProfActivity extends AppCompatActivity {
     ActionBarDrawerToggle toggle;
     NavigationView navigationView;
     Spinner sistemas;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar=findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        sistemas=(Spinner) findViewById(R.id.SPIN);
+        sistemas = (Spinner) findViewById(R.id.SPIN);
 
-        ArrayAdapter adapter= ArrayAdapter.createFromResource(this,R.array.sistemas_mobile, android.R.layout.simple_spinner_item);
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.sistemas_mobile, R.layout.spinner_item);
         sistemas.setAdapter(adapter);
 
-        drawerLayout=findViewById(R.id.drawer);
-        navigationView=findViewById(R.id.nav_view);
+        drawerLayout = findViewById(R.id.drawer);
+        navigationView = findViewById(R.id.nav_view);
 
-        toggle= new ActionBarDrawerToggle(this,drawerLayout, toolbar,R.string.open,R.string.close);
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.setDrawerIndicatorEnabled(true);
         toggle.syncState();

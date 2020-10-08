@@ -68,10 +68,9 @@
         android:background="#fff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:outlineAmbientShadowColor="#3C72FF"
-        android:outlineSpotShadowColor="#3C72FF"
         app:tabIndicatorColor="#3C72FF"
         app:tabSelectedTextColor="#3C72FF"
+        app:tabTextColor="#000"
         app:layout_constraintTop_toTopOf="@+id/toolbar">
 
         <com.google.android.material.tabs.TabItem

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    tools:openDrawer="right"
     android:id="@+id/drawer">
     <include
         android:layout_height="match_parent"
@@ -15,10 +16,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/nav_view"
+        android:background="#fff"
         app:headerLayout="@layout/nav_header"
         android:fitsSystemWindows="true"
-        android:foregroundGravity="right"
-        android:layout_gravity="end"/>
+        android:layout_gravity="right"/>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/borda4"
+    android:background="#fff"
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="278dp"
-        android:layout_height="731dp"
-        android:background="@drawable/borda4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#fff"
+        android:gravity="end"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="B R A I N A T I O N"
             android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="B R A I N A T I O N"
             android:textColor="#FD050404"
             android:textSize="24sp" />
 
@@ -29,44 +33,53 @@
             android:id="@+id/imageButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
             app:srcCompat="@drawable/linha" />
 
         <Button
-            android:layout_marginTop="5dp"
             android:id="@+id/button"
-            android:layout_width="262dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:background="#E8E8E8"
             android:text="Grade de Horários"
-
-            />
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <Button
-            android:layout_marginTop="5dp"
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fale Conosco" />
+            android:layout_marginTop="20dp"
+            android:background="#E8E8E8"
+            android:textColor="#000"
+            android:text="Fale Conosco"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <Button
-            android:layout_marginTop="5dp"
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Avisos" />
+            android:layout_marginTop="20dp"
+            android:background="#E8E8E8"
+            android:text="Avisos"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <Button
-            android:layout_marginTop="5dp"
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Adicionar Assuntos" />
+            android:layout_marginTop="20dp"
+            android:background="#E8E8E8"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="Adicionar Assuntos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-        <ImageView
-            android:layout_marginTop="400dp"
-            android:layout_marginHorizontal="220dp"
-            android:id="@+id/imageView3"
-            android:layout_width="48dp"
-            android:layout_height="30dp"
-            app:srcCompat="@drawable/iconvoltar1" />
+
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
