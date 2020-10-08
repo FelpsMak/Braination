@@ -33,13 +33,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnRegister.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,PessoascadastroActivity.class);
-                ActivityOptionsCompat activityOptionsCompat =ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.move_esquerda,R.anim.fade_in);
-                ActivityCompat.startActivity(MainActivity.this,intent,activityOptionsCompat.toBundle());
 
-            }
-        });
     }
 }

@@ -59,13 +59,6 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-        btnLoginProfessor=findViewById(R.id.btn_login_professor);
-        btnLoginProfessor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this,ListaProfActivity.class));
-            }
-        });
 
         txtRegister=findViewById(R.id.forgot_password);
         txtRegister.setOnClickListener(new View.OnClickListener() {

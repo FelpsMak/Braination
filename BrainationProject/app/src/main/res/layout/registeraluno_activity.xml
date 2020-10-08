@@ -24,7 +24,6 @@
         android:layout_height="wrap_content"
         android:text="Senha"
         android:textColor="#FD000000"
-        margin
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
