@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class RegisteralunoActivity extends AppCompatActivity {
     Button btnRegister;
@@ -23,7 +22,5 @@ public class RegisteralunoActivity extends AppCompatActivity {
         });
     }
 
-    public void sussa2(View view) {
-        Toast.makeText(getApplicationContext(), "Projeto em andamento", Toast.LENGTH_SHORT).show();
-    }
+
 }
