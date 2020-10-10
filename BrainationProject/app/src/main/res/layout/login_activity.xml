@@ -12,23 +12,26 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/pass_text_login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255"
         app:srcCompat="@drawable/livro" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:fontFamily="@font/roboto_regular"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/roboto_slab_regular"
         android:text="Email"
         android:textColor="#000"
+        android:layout_marginBottom="5dp"
         android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/pass_text_login"
         app:layout_constraintStart_toStartOf="@+id/pass_text_login" />
+
 
     <EditText
         android:id="@+id/email_text_login"
@@ -36,45 +39,50 @@
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/borda"
         android:ems="10"
         android:fontFamily="@font/roboto_regular"
         android:inputType="textEmailAddress"
         android:paddingHorizontal="10dp"
         android:textColor="#1F1F1F"
+        app:layout_constraintBottom_toTopOf="@+id/forgot_password"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pass_text_login" />
-
+        app:layout_constraintTop_toBottomOf="@+id/pass_text_login"
+        app:layout_constraintVertical_bias="0.050000012" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:fontFamily="@font/roboto_regular"
+        android:fontFamily="@font/roboto_slab_regular"
         android:text="Password"
-
         android:textColor="#000"
         android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/email_text_login"
-        app:layout_constraintStart_toStartOf="@+id/email_text_login" />
+        app:layout_constraintStart_toStartOf="@+id/email_text_login"
+        app:layout_constraintTop_toBottomOf="@+id/pass_text_login"
+        app:layout_constraintVertical_bias="0.62" />
 
     <EditText
         android:id="@+id/pass_text_login"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_gravity="center"
-        android:layout_marginTop="45dp"
         android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/borda"
         android:ems="10"
         android:inputType="textPassword"
         android:paddingHorizontal="10dp"
         android:textColor="#1F1F1F"
+        app:layout_constraintBottom_toTopOf="@+id/forgot_password"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998" />
 
     <Button
         android:id="@+id/btn_login_aluno"
@@ -82,7 +90,8 @@
         android:layout_height="52dp"
         android:layout_gravity="center"
         android:layout_marginHorizontal="50dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/borda3"
         android:text="Login"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -90,7 +99,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/forgot_password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_text_login"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/forgot_password"
@@ -104,6 +116,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
 
