@@ -81,7 +81,6 @@
         android:text="Senha"
         android:textColor="#FD000000"
         android:textSize="18sp"
-        app:layout_constrainEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintStart_toStartOf="@+id/editTextPassword" />
 
