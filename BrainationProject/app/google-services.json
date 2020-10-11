@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "1085965388921",
-    "firebase_url": "https://braination-2d566.firebaseio.com",
-    "project_id": "braination-2d566",
-    "storage_bucket": "braination-2d566.appspot.com"
+    "project_number": "186249486271",
+    "firebase_url": "https://braination-8370a.firebaseio.com",
+    "project_id": "braination-8370a",
+    "storage_bucket": "braination-8370a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1085965388921:android:c2d9ca87122fff4bb3d8a8",
+        "mobilesdk_app_id": "1:186249486271:android:f02a5404090e58a284cb0a",
         "android_client_info": {
-          "package_name": "br.com.diogo.Braination"
+          "package_name": "com.example.brainationproject"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1085965388921-tro7ic4sdqgca43ckmo19bc7th5jrgm6.apps.googleusercontent.com",
+          "client_id": "186249486271-ql3ddc5hri47k420p0lk68ah6m8li7tb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBJkdObXPHnZ-tVnA4UfNeidFn9K55NSuw"
+          "current_key": "AIzaSyBJworfdGxZVlQkAjXZRkpv7iQpIX_R1QE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1085965388921-tro7ic4sdqgca43ckmo19bc7th5jrgm6.apps.googleusercontent.com",
+              "client_id": "186249486271-ql3ddc5hri47k420p0lk68ah6m8li7tb.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
