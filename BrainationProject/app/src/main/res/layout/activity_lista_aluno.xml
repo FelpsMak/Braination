@@ -20,7 +20,7 @@
         android:layout_width="80dp"
         android:layout_height="100dp"
         android:layout_marginStart="15dp"
-        android:src="@drawable/iconeprofessor"
+        android:src="@drawable/iconaluno"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +30,7 @@
         android:layout_marginTop="15dp"
         android:gravity="center"
         android:text="Turmas"
-        android:textColor="#3C72FF"
+        android:textColor="#D70000"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/SPIN"
         app:layout_constraintStart_toStartOf="@+id/SPIN"
@@ -68,8 +68,8 @@
         android:background="#fff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:tabIndicatorColor="#3C72FF"
-        app:tabSelectedTextColor="#3C72FF"
+        app:tabIndicatorColor="#D70000"
+        app:tabSelectedTextColor="#D70000"
         app:tabTextColor="#000"
         app:layout_constraintTop_toTopOf="@+id/toolbar">
 
@@ -77,13 +77,13 @@
             android:id="@+id/tabAlunos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Alunos" />
+            android:text="Atividades" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabAtv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Atividades" />
+            android:text="Assuntos" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tabProvas"

@@ -40,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLoginAluno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String email, password;
 
                 email = cxemail.getText().toString();

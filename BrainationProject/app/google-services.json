@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "152339069025",
-    "firebase_url": "https://braination-e53cf.firebaseio.com",
-    "project_id": "braination-e53cf",
-    "storage_bucket": "braination-e53cf.appspot.com"
+    "project_number": "1085965388921",
+    "firebase_url": "https://braination-2d566.firebaseio.com",
+    "project_id": "braination-2d566",
+    "storage_bucket": "braination-2d566.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:152339069025:android:4bc7a86e33ec7bade91220",
+        "mobilesdk_app_id": "1:1085965388921:android:c2d9ca87122fff4bb3d8a8",
         "android_client_info": {
-          "package_name": "com.example.brainationproject"
+          "package_name": "br.com.diogo.Braination"
         }
       },
       "oauth_client": [
         {
-          "client_id": "152339069025-k4fftdv07k2oaq399p8g4v8j3e7dv8ac.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.brainationproject",
-            "certificate_hash": "a8412f170e26b3eb96b9febade400806d8639919"
-          }
-        },
-        {
-          "client_id": "152339069025-s1hhomcuic3e1pb8oda8qma5ltor8mrs.apps.googleusercontent.com",
+          "client_id": "1085965388921-tro7ic4sdqgca43ckmo19bc7th5jrgm6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDrSbNZWx-s71baGwqlBubI574v_bEjJu0"
+          "current_key": "AIzaSyBJkdObXPHnZ-tVnA4UfNeidFn9K55NSuw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "152339069025-s1hhomcuic3e1pb8oda8qma5ltor8mrs.apps.googleusercontent.com",
+              "client_id": "1085965388921-tro7ic4sdqgca43ckmo19bc7th5jrgm6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
