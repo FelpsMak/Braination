@@ -48,6 +48,7 @@ public class RegisteralunoActivity extends AppCompatActivity {
     }
     private void registerNewUser(String name, String email, String password){
 
+        //100% que o erro ta a partir daq tlg
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>(){
                     @Override
