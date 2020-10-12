@@ -13,7 +13,7 @@
         android:layout_height="130dp"
         android:layout_gravity="center"
         android:layout_marginTop="36dp"
-        app:layout_constraintBottom_toTopOf="@+id/pass_text_login"
+        app:layout_constraintBottom_toTopOf="@+id/email_text_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -29,12 +29,12 @@
         android:textColor="#000"
         android:layout_marginBottom="5dp"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/pass_text_login"
-        app:layout_constraintStart_toStartOf="@+id/pass_text_login" />
+        app:layout_constraintBottom_toTopOf="@+id/email_text_login"
+        app:layout_constraintStart_toStartOf="@+id/email_text_login" />
 
 
     <EditText
-        android:id="@+id/pass_text_login"
+        android:id="@+id/email_text_login"
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
@@ -60,13 +60,13 @@
         android:text="Password"
         android:textColor="#000"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/email_text_login"
-        app:layout_constraintStart_toStartOf="@+id/email_text_login"
-        app:layout_constraintTop_toBottomOf="@+id/pass_text_login"
+        app:layout_constraintBottom_toTopOf="@+id/pass_text_login"
+        app:layout_constraintStart_toStartOf="@+id/pass_text_login"
+        app:layout_constraintTop_toBottomOf="@+id/email_text_login"
         app:layout_constraintVertical_bias="0.62" />
 
     <EditText
-        android:id="@+id/email_text_login"
+        android:id="@+id/pass_text_login"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_gravity="center"
@@ -82,7 +82,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pass_text_login"
+        app:layout_constraintTop_toBottomOf="@+id/email_text_login"
         app:layout_constraintVertical_bias="0.050000012"
          />
 
@@ -104,7 +104,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_text_login"
+        app:layout_constraintTop_toBottomOf="@+id/pass_text_login"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView

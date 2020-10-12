@@ -25,6 +25,8 @@ public class RegisteralunoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registeraluno_activity);
 
+        mAuth = FirebaseAuth.getInstance();
+
 
         btnRegister=findViewById(R.id.btnRegisterA);
         Rnome=findViewById(R.id.edit_text_nome);

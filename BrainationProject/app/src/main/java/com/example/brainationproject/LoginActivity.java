@@ -29,12 +29,23 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        mAuth = FirebaseAuth.getInstance();
+
 
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.login_activity);
+        mAuth = FirebaseAuth.getInstance();
+
         cxemail=findViewById(R.id.email_text_login);
         cxpass=findViewById(R.id.pass_text_login);
+
+        txtRegister=findViewById(R.id.forgot_password);
+        txtRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this,ForgotActivity.class));
+            }
+        });
 
         btnLoginAluno=findViewById(R.id.btn_login_aluno);
         btnLoginAluno.setOnClickListener(new View.OnClickListener() {
@@ -56,13 +67,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        txtRegister=findViewById(R.id.forgot_password);
-        txtRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this,ForgotActivity.class));
-            }
-        });
+
     }
     private void doLogin(String email, String password){
         mAuth.signInWithEmailAndPassword(email, password)
