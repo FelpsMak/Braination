@@ -37,7 +37,7 @@
             app:srcCompat="@drawable/linha" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/nav_bt_grade_horario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -48,7 +48,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/nav_bt_fale_conosco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -56,28 +56,6 @@
             android:textColor="#000"
             android:text="Fale Conosco"
             android:textSize="20sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="#E8E8E8"
-            android:text="Avisos"
-            android:textSize="20sp"
-            android:textColor="#000"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="#E8E8E8"
-            android:textColor="#000"
-            android:textSize="20sp"
-            android:text="Adicionar Assuntos"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 

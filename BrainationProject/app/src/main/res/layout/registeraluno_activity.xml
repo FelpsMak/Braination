@@ -112,7 +112,7 @@
         app:srcCompat="@drawable/divisor" />
 
     <Button
-        android:id="@+id/btnRegisterA"
+        android:id="@+id/btnRegisterAluno"
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginHorizontal="51dp"
