@@ -73,7 +73,7 @@ public class RegisteralunoActivity extends AppCompatActivity {
                             p.setUid(UUID.randomUUID().toString());
                             p.setNome(Rnome.getText().toString());
                             p.setEmail(Remail.getText().toString());
-                            p.setEmail(Rsenha.getText().toString());
+                            p.setSenha(Rsenha.getText().toString());
                             databaseReference.child("Pessoa").child(p.getUid()).setValue(p);
                             limparCampos();
                             FirebaseUser user = mAuth.getCurrentUser();

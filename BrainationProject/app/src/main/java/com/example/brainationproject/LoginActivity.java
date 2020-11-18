@@ -56,17 +56,12 @@ public class LoginActivity extends AppCompatActivity {
                 password = cxpass.getText().toString();
 
                 if(!email.trim().isEmpty() && !password.trim().isEmpty()){
-                    startActivity(new Intent(getApplicationContext(), ListaAlunoActivity.class));
-                    //doLogin(email, password);
+                    doLogin(email, password);
                 }else{
                     Toast.makeText(getApplicationContext(), "Preencha os Campos Vazios", Toast.LENGTH_SHORT).show();
                 }
-
-
             }
         });
-
-
     }
     private void doLogin(String email, String password){
         mAuth.signInWithEmailAndPassword(email, password)
@@ -75,25 +70,18 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Log.d("autenticado", "autenticado");
-                            // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = mAuth.getCurrentUser();
                             startActivity(new Intent(LoginActivity.this, ListaAlunoActivity.class));
-
                         } else {
-                            // If sign in fails, display a message to the user.
                             Toast.makeText(LoginActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
-
                         }
-
-                        // ...
                     }
                 });
     }
     @Override
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
     }
