@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/wallpapernormal"
     android:orientation="vertical">
-
+    <include layout="@layout/content_main" />
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="0dp"

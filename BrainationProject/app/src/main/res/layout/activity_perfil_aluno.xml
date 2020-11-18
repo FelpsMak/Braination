@@ -60,7 +60,7 @@
             app:layout_constraintEnd_toEndOf="@+id/imageView13"
             app:srcCompat="@drawable/icon_edit" />
 
-        <TextView
+        <EditText
             android:id="@+id/Edit_Nome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

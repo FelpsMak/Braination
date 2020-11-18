@@ -33,7 +33,7 @@ public class ListaAlunoActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nav_header);
+        setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         btAdd = findViewById(R.id.activity_lista_aluno_bt_add);
         btGrade = findViewById(R.id.nav_bt_grade_horario);
