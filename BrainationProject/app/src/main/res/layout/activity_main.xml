@@ -17,9 +17,12 @@
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
+        android:layout_gravity="left"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu" />
-
+        app:menu="@menu/nav_menu"
+        app:itemHorizontalPadding="90dp"
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:itemBackground="@drawable/borda5"
+        app:itemTextColor="#000000"/>
 </androidx.drawerlayout.widget.DrawerLayout>

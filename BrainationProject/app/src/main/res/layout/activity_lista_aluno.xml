@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/wallpapernormal"
     android:orientation="vertical">
-    <include layout="@layout/content_main" />
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="0dp"
@@ -42,10 +41,10 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="25dp"
+        android:layout_width="87dp"
+        android:layout_height="26dp"
         android:layout_marginTop="15dp"
-        android:gravity="center"
+        android:gravity="left"
         android:text="Turmas"
         android:textColor="#D70000"
         android:textSize="15sp"
@@ -93,13 +92,13 @@
         app:tabTextColor="#000">
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabAlunos"
+            android:id="@+id/tabAtividades"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Atividades" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/tabAtv"
+            android:id="@+id/tabAvisos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Avisos" />
@@ -124,27 +123,7 @@
 
     </androidx.viewpager.widget.ViewPager>
 
-    <ImageButton
-        android:id="@+id/activity_lista_aluno_bt_delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/icone_lixeira" />
 
-    <ImageButton
-        android:id="@+id/activity_lista_aluno_bt_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/icone_adicionar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

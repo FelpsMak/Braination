@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
+    android:layout_marginTop="15dp"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="70dp"
         android:layout_gravity="end"
         android:background="#fff"
         android:gravity="end"
@@ -23,8 +24,8 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center"
-            android:layout_marginTop="15dp"
             android:text="B R A I N A T I O N"
             android:textColor="#FD050404"
             android:textSize="24sp" />
@@ -32,32 +33,10 @@
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="match_parent"
+            android:elevation="15dp"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
             app:srcCompat="@drawable/linha" />
-
-        <Button
-            android:id="@+id/nav_bt_grade_horario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textColor="#000"
-            android:background="#E8E8E8"
-            android:text="Grade de Horários"
-            android:textSize="20sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-        <Button
-            android:id="@+id/nav_bt_fale_conosco"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="#E8E8E8"
-            android:textColor="#000"
-            android:text="Fale Conosco"
-            android:textSize="20sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
 
     </LinearLayout>
 </LinearLayout>
