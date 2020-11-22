@@ -13,14 +13,15 @@
         <TextView
             android:id="@+id/textView11"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="360dp"
+            android:layout_height="wrap_content"
             android:elevation="20dp"
             android:fontFamily="@font/roboto_slab_regular"
             android:gravity="center"
-            android:text="Adicionar uma Atividade"
+            android:text="Adicionar um Atividades"
             android:textColor="#000"
             android:textSize="28sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView15"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

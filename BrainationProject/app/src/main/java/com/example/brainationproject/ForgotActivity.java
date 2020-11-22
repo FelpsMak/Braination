@@ -1,6 +1,5 @@
 package com.example.brainationproject;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +18,7 @@ public class ForgotActivity extends AppCompatActivity {
 
         txtInf2=findViewById(R.id.txtInf2);
         txtInf=findViewById(R.id.txtInf);
-        btnOK=findViewById(R.id.btn_login_aluno);
+        btnOK=findViewById(R.id.button_OK);
         btnOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -37,8 +37,6 @@ public class PerfilAlunoActivity extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
-    private List<Pessoa> listpessoa = new ArrayList<Pessoa>();
-    private ArrayAdapter<Pessoa> arrayAdapterPessoa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
