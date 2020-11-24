@@ -29,54 +29,33 @@
         app:navigationIcon="@drawable/icone3linhas1"
         app:title=" " />
 
-    <ImageView
-        android:id="@+id/activity_lista_aluno_bt_perfil"
-        android:layout_width="80dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="50dp"
-        android:src="@drawable/perfilbutton"
-        app:layout_constraintBottom_toTopOf="@+id/tabLayout"
+    <TextView
+        android:layout_width="214dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/roboto_slab_regular"
+        android:gravity="center"
+        android:text="BRAINATION"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.385"
         app:layout_constraintStart_toStartOf="@+id/toolbar"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:layout_width="87dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="15dp"
-        android:gravity="left"
-        android:text="Turmas"
-        android:textColor="#D70000"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/SPIN"
-        app:layout_constraintStart_toStartOf="@+id/SPIN"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <Spinner
-        android:id="@+id/SPIN"
-        android:layout_width="0dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/borda_selector"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/activity_lista_aluno_bt_perfil"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintVertical_bias="0.526" />
 
     <ImageView
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginEnd="15dp"
-        android:src="@drawable/iconescrowls"
-        app:layout_constraintBottom_toBottomOf="@+id/SPIN"
-        app:layout_constraintEnd_toEndOf="@+id/SPIN"
-        app:layout_constraintTop_toTopOf="@+id/SPIN" />
-
-
-
+        android:id="@+id/imageView4"
+        android:layout_width="111dp"
+        android:layout_height="101dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/email_text_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495"
+        app:srcCompat="@drawable/livro" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"

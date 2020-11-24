@@ -30,7 +30,6 @@ public class ListaAlunoActivity extends AppCompatActivity
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     NavigationView navigationView;
-    Spinner sistemas;
     Button btGrade, btFaleConosco;
     PagerAdapter pageAdapter;
     ImageView btPerfil;
@@ -71,22 +70,6 @@ public class ListaAlunoActivity extends AppCompatActivity
         btPerfil = findViewById(R.id.activity_lista_aluno_bt_perfil);
         btDelete = findViewById(R.id.activity_lista_aluno_bt_delete);
 
-
-
-        btPerfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), PerfilAlunoActivity.class));
-            }
-        });
-
-
-        sistemas = (Spinner) findViewById(R.id.SPIN);
-
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.sistemas_mobile, R.layout.spinner_item);
-        sistemas.setAdapter(adapter);
-
-
         navigationView.setNavigationItemSelectedListener(this);
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
@@ -113,6 +96,9 @@ public class ListaAlunoActivity extends AppCompatActivity
         }
         else if(id==R.id.nav_gallery){
             startActivity(new Intent(getApplicationContext(), FaleConoscoActivity.class));
+        }
+        else if(id==R.id.activity_lista_aluno_bt_perfil){
+            startActivity(new Intent(getApplicationContext(), PerfilAlunoActivity.class));
         }
         drawerLayout=findViewById(R.id.drawer);
         drawerLayout.closeDrawer(GravityCompat.START);

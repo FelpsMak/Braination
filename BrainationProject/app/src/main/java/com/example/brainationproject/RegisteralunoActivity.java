@@ -38,63 +38,61 @@ public class RegisteralunoActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-
-        btnRegister=findViewById(R.id.btnRegisterAluno);
-        Rnome=findViewById(R.id.edit_text_nome);
-        Remail=findViewById(R.id.edit_text_email);
-        Rsenha=findViewById(R.id.edit_text_senha);
+        btnRegister = findViewById(R.id.btnRegisterAluno);
+        Rnome = findViewById(R.id.edit_text_nome);
+        Remail = findViewById(R.id.edit_text_email);
+        Rsenha = findViewById(R.id.edit_text_senha);
 
         inicializarFirebase();
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String name, email, senha;
-                name=Rnome.getText().toString();
-                email=Remail.getText().toString();
-                senha=Rsenha.getText().toString();
+                name = Rnome.getText().toString();
+                email = Remail.getText().toString();
+                senha = Rsenha.getText().toString();
                 registerNewUser(name, email, senha);
 
-            }});
-
+            }
+        });
 
 
     }
-    private void registerNewUser(String name, String email, String password){
+
+    private void registerNewUser(String name, String email, String password) {
 
         mAuth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>(){
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d("AAAAA", "aqui");
-                        if(task.isSuccessful()) {
+                        if (task.isSuccessful()) {
                             Pessoa p = new Pessoa();
-                            p.setUid(UUID.randomUUID().toString());
+                            p.setUid(mAuth.getUid());
                             p.setNome(Rnome.getText().toString());
                             p.setEmail(Remail.getText().toString());
                             p.setSenha(Rsenha.getText().toString());
                             databaseReference.child("Pessoa").child(p.getUid()).setValue(p);
                             limparCampos();
                             FirebaseUser user = mAuth.getCurrentUser();
-                            startActivity(new Intent(RegisteralunoActivity.this,LoginActivity.class));
-                        }
-                        else {
-                            Toast.makeText(RegisteralunoActivity.this, "Authentication failed",Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(RegisteralunoActivity.this, LoginActivity.class));
+                        } else {
+                            Toast.makeText(RegisteralunoActivity.this, "Authentication failed", Toast.LENGTH_SHORT).show();
                         }
                     }
 
                 });
     }
 
-    private void inicializarFirebase(){
+
+    private void inicializarFirebase() {
         FirebaseApp.initializeApp(RegisteralunoActivity.this);
-        firebaseDatabase=FirebaseDatabase.getInstance();
-        databaseReference=firebaseDatabase.getReference();
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference();
     }
 
-    private void limparCampos()
-    {
+    private void limparCampos() {
         Rnome.setText("");
         Remail.setText("");
         Rsenha.setText("");

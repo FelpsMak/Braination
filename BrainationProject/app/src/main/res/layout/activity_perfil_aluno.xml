@@ -61,7 +61,7 @@
             app:srcCompat="@drawable/icon_edit" />
 
         <EditText
-            android:id="@+id/Edit_Nome"
+            android:id="@+id/activity_perfil_edt_nome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -105,6 +105,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
+            android:id="@+id/activity_perfil_edt_email"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -123,6 +124,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -148,12 +150,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
+            android:id="@+id/activity_perfil_edt_senha"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:background="@drawable/input_border"
             android:fontFamily="@font/roboto_slab_regular"
-            android:inputType="textPassword"
+            android:inputType="textPersonName"
             android:paddingHorizontal="10dp"
             android:paddingVertical="5dp"
             android:textColor="#000"
@@ -164,4 +167,14 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/activity_perfil_bt_salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
