@@ -56,7 +56,7 @@
         app:srcCompat="@drawable/wallpaperescuro" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
+        android:id="@+id/constraintLayout4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
@@ -68,6 +68,54 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/abc">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:text="Disciplina"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/activity_adicionar_atividade_edt_disciplina"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/border_gray"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:inputType="text"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:background="#E8E8E8"
+        android:elevation="10dp"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
 
         <TextView
             android:id="@+id/textView12"
@@ -92,7 +140,7 @@
             android:paddingHorizontal="10dp"
             android:paddingVertical="5dp"
             android:inputType="text"
-            android:text="Entrega para a Banca de Projeto"
+            android:text=""
             android:textAlignment="center"
             android:textColor="#000"
             android:textSize="18sp"
@@ -139,7 +187,7 @@
             android:fontFamily="@font/roboto_slab_regular"
             android:paddingHorizontal="10dp"
             android:paddingVertical="5dp"
-            android:text="19/10/2020"
+            android:text=""
             android:inputType="date"
             android:maxLength="10"
             android:textAlignment="center"

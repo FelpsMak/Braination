@@ -4,25 +4,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.Spinner;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.brainationproject.ClassePessoa.Atividade;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
+
+import java.util.List;
 
 public class ListaAlunoActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
@@ -67,11 +66,16 @@ public class ListaAlunoActivity extends AppCompatActivity
 
         btGrade = findViewById(R.id.nav_home);
         btFaleConosco = findViewById(R.id.nav_gallery);
-        btPerfil = findViewById(R.id.activity_lista_aluno_bt_perfil);
+        btPerfil = findViewById(R.id.bt_ir_perfil);
         btDelete = findViewById(R.id.activity_lista_aluno_bt_delete);
 
         navigationView.setNavigationItemSelectedListener(this);
-
+        btPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ListaAlunoActivity.this,PerfilAlunoActivity.class));
+            }
+        });
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 
     }
@@ -97,13 +101,14 @@ public class ListaAlunoActivity extends AppCompatActivity
         else if(id==R.id.nav_gallery){
             startActivity(new Intent(getApplicationContext(), FaleConoscoActivity.class));
         }
-        else if(id==R.id.activity_lista_aluno_bt_perfil){
-            startActivity(new Intent(getApplicationContext(), PerfilAlunoActivity.class));
-        }
+
         drawerLayout=findViewById(R.id.drawer);
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 
+    public List<Atividade> getSetAtividadeList(int i) {
+        String  [] disciplinas = new String[]{}
+    }
 }
 
