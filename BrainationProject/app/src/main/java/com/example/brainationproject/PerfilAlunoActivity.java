@@ -58,7 +58,6 @@ public class PerfilAlunoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 databaseReference.child("Pessoa").child(mAuth.getUid()).child("nome").setValue(edtNome.getText().toString().trim());
                 databaseReference.child("Pessoa").child(mAuth.getUid()).child("email").setValue(edtEmail.getText().toString().trim());
-                databaseReference.child("Pessoa").child(mAuth.getUid()).child("senha").setValue(edtSenha.getText().toString().trim());
                 finish();
             }
         });
@@ -77,11 +76,9 @@ public class PerfilAlunoActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String nome = dataSnapshot.child("Pessoa").child(mAuth.getUid()).child("nome").getValue(String.class);
                 String email = dataSnapshot.child("Pessoa").child(mAuth.getUid()).child("email").getValue(String.class);
-                String senha = dataSnapshot.child("Pessoa").child(mAuth.getUid()).child("senha").getValue(String.class);
 
                 edtNome.setText(nome);
                 edtEmail.setText(email);
-                edtSenha.setText(senha);
 
             }
 

@@ -79,6 +79,50 @@
                 android:paddingVertical="10dp">
 
                 <TextView
+                    android:id="@+id/textView1_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:text="Disciplina da atividade"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/skkk"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/border_gray"
+                    android:fontFamily="@font/roboto_slab_regular"
+                    android:inputType="text"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView1_3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E8E8E8"
+                android:elevation="10dp"
+                android:layout_marginTop="40dp"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="10dp">
+
+                <TextView
                     android:id="@+id/textView13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -101,7 +145,7 @@
                     android:inputType="text"
                     android:paddingHorizontal="10dp"
                     android:paddingVertical="5dp"
-                    android:text="Institucional"
+                    android:text=""
                     android:textAlignment="center"
                     android:textColor="#000"
                     android:textSize="18sp"
@@ -144,7 +188,7 @@
                     android:inputType="date"
                     android:paddingHorizontal="10dp"
                     android:paddingVertical="5dp"
-                    android:text="07/10/2020"
+                    android:text="  /  /  "
                     android:textAlignment="center"
                     android:textColor="#000"
                     android:textSize="18sp"
@@ -155,54 +199,6 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#E8E8E8"
-                android:elevation="10dp"
-                android:layout_marginTop="30dp"
-                android:paddingHorizontal="30dp"
-                android:paddingVertical="10dp">
-
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_slab_regular"
-                    android:text="Mês de Prova"
-                    android:textColor="#000"
-                    android:textSize="18sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Spinner
-                    android:id="@+id/spinner1"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="1dp"
-                    android:background="@drawable/border_gray"
-                    android:paddingHorizontal="10dp"
-                    android:paddingVertical="5dp"
-                    android:textAlignment="center"
-                    android:textColor="#000"
-                    android:textSize="18sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-                <ImageView
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
-                    android:layout_marginEnd="15dp"
-                    android:src="@drawable/iconescrowls"
-                    app:layout_constraintBottom_toBottomOf="@+id/spinner1"
-                    app:layout_constraintEnd_toEndOf="@+id/spinner1"
-                    app:layout_constraintTop_toTopOf="@+id/spinner1" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -237,7 +233,7 @@
                     android:inputType="text"
                     android:paddingHorizontal="10dp"
                     android:paddingVertical="5dp"
-                    android:text="Pontuação"
+                    android:text=""
                     android:textAlignment="center"
                     android:textColor="#000"
                     android:textSize="18sp"

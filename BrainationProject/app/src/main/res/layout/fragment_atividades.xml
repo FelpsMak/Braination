@@ -11,6 +11,8 @@
         android:layout_height="match_parent">
 
 
+
+
         <ImageView
             android:id="@+id/imageView15"
             android:layout_width="match_parent"
@@ -19,6 +21,15 @@
             app:layout_constraintEnd_toEndOf="@+id/textView11"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/wallpaperescuro" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_atividades"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
             android:id="@+id/activity_lista_aluno_bt_delete"
@@ -42,15 +53,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/icone_adicionar" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_list_atividades"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:elevation="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

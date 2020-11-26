@@ -50,10 +50,7 @@ public class AtividadesFragment extends Fragment implements RecyclerViewOnClickL
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_atividades, container, false);
-
-
     }
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
@@ -70,6 +67,8 @@ public class AtividadesFragment extends Fragment implements RecyclerViewOnClickL
         databaseReference.child(auth.getUid().toString()).child("Atividades").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                mList = new ArrayList<>();
                 if (snapshot.exists()){
                     for (DataSnapshot dado : snapshot.getChildren()){
                         String titulo = dado.child("titulo").getValue().toString();
@@ -80,8 +79,9 @@ public class AtividadesFragment extends Fragment implements RecyclerViewOnClickL
 
                     }
                     System.out.println(mList.toString());
-                    atividadesAdapter = new AtividadesAdapter(getActivity(), mList);
-                    //mRecyclerView.setAdapter(atividadesAdapter);
+                    atividadesAdapter = new AtividadesAdapter(getContext(), mList);
+                    mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+                    mRecyclerView.setAdapter(atividadesAdapter);
                 }
             }
 
@@ -92,30 +92,6 @@ public class AtividadesFragment extends Fragment implements RecyclerViewOnClickL
         });
 
 
-
-        /*options = new FirebaseRecyclerOptions.Builder<Atividade>()
-                .setQuery(databaseReference, Atividade.class).build();
-
-        Log.d("asdasd", "fasdfasdf");
-
-        adapter = new FirebaseRecyclerAdapter<Atividade, AtividadeItemViewHolder>(options) {
-            @Override
-            protected void onBindViewHolder(@NonNull AtividadeItemViewHolder holder, int position, @NonNull Atividade model) {
-                holder.tvData.setText(model.getData());
-                Log.d("asdasd", "fasdfasdf");
-                holder.tvDisciplina.setText(model.getDisciplina());
-                holder.tvTitulo.setText(model.getTitulo());
-            }
-
-            @NonNull
-            @Override
-            public AtividadeItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_atividade, parent, false);
-                Log.d("asdasd", "fasdfasdf");
-                return new AtividadeItemViewHolder(view);
-            }
-        };*/
-
         btAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -123,9 +99,6 @@ public class AtividadesFragment extends Fragment implements RecyclerViewOnClickL
                 startActivity(intent);
             }
         });
-
-//        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-//        mRecyclerView.setAdapter(adapter);
 
         super.onViewCreated(view, savedInstanceState);
     }

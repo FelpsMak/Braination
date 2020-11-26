@@ -10,21 +10,20 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.brainationproject.ClassePessoa.Atividade;
+import com.example.brainationproject.ClassePessoa.Aviso;
 import com.example.brainationproject.R;
 import com.example.brainationproject.RecyclerViewOnClickListenerHack;
 
-import java.text.CollationElementIterator;
 import java.util.List;
 
-public class AtividadesAdapter extends RecyclerView.Adapter<AtividadesAdapter.MyViewHolder> {
+public class AvisosAdapter extends RecyclerView.Adapter<AvisosAdapter.MyViewHolder> {
 
-    private List<Atividade> mList;
+    private List<Aviso> mList;
     private LayoutInflater mLayoutInflater;
     private Context context;
     private RecyclerViewOnClickListenerHack mRecyclerViewOnClickListenerHack;
 
-    public AtividadesAdapter(Context c, List<Atividade> l) {
+    public AvisosAdapter(Context c, List<Aviso> l) {
         mList = l;
         context = c;
         mLayoutInflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -33,7 +32,7 @@ public class AtividadesAdapter extends RecyclerView.Adapter<AtividadesAdapter.My
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         Log.i("LOG", "onCreateViewHolder");
-        View v = mLayoutInflater.inflate(R.layout.item_atividade, viewGroup, false);
+        View v = mLayoutInflater.inflate(R.layout.item_avisos, viewGroup, false);
         MyViewHolder mvh = new MyViewHolder(v);
 
         return mvh;
@@ -42,8 +41,7 @@ public class AtividadesAdapter extends RecyclerView.Adapter<AtividadesAdapter.My
     @Override
     public void onBindViewHolder(MyViewHolder myViewHolder, int position) {
         Log.i("LOG", "onBindViewHolder");
-        myViewHolder.tvDisciplina.setText(mList.get(position).getDisciplina());
-        myViewHolder.tvTitulo.setText(mList.get(position).getTitulo());
+        myViewHolder.tvTexto.setText(mList.get(position).getTexto());
         myViewHolder.tvData.setText(mList.get(position).getData());
     }
 
@@ -56,7 +54,7 @@ public class AtividadesAdapter extends RecyclerView.Adapter<AtividadesAdapter.My
         mRecyclerViewOnClickListenerHack = r;
     }
 
-    public void addListItem(Atividade c, int position) {
+    public void addListItem(Aviso c, int position) {
         mList.add(c);
         notifyItemInserted(position);
     }
@@ -67,16 +65,13 @@ public class AtividadesAdapter extends RecyclerView.Adapter<AtividadesAdapter.My
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public ImageView ivAtividade;
-        public TextView tvDisciplina, tvTitulo, tvData;
+        public TextView tvTexto, tvData;
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            ivAtividade = (ImageView) itemView.findViewById(R.id.iv_atividade);
-            tvDisciplina = (TextView) itemView.findViewById(R.id.tv_disciplina);
-            tvTitulo = (TextView) itemView.findViewById(R.id.tv_titulo);
-            tvData = (TextView) itemView.findViewById(R.id.tv_data);
-            
+            tvTexto = (TextView) itemView.findViewById(R.id.tv_texto_avisos);
+            tvData = (TextView) itemView.findViewById(R.id.tv_data_avisos);
+
         }
 
 

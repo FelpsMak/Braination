@@ -10,42 +10,35 @@
     android:layout_marginHorizontal="30dp"
     android:paddingVertical="10dp">
 
-    <ImageView
-        android:id="@+id/iv_atividade"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginRight="6dp"
-        android:src="@drawable/atividades" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
         <TextView
-            android:id="@+id/tv_disciplina"
+            android:id="@+id/textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#000"
-            android:textStyle="bold"
+            android:text="Aviso"
+            android:fontFamily="@font/roboto_slab_regular"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_texto_avisos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
             android:fontFamily="@font/roboto_slab_regular"
             android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/tv_titulo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#000"
-            android:fontFamily="@font/roboto_slab_regular"
-            android:textSize="12sp" />
-
-        <TextView
-            android:id="@+id/tv_data"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#000"
-            android:fontFamily="@font/roboto_slab_regular"
-            android:textSize="12sp" />
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/tv_data_avisos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_slab_regular"
+        android:textColor="#000"
+        android:textSize="12sp" />
 </LinearLayout>
