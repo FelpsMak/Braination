@@ -107,8 +107,8 @@ public class ListaAlunoActivity extends AppCompatActivity
         return true;
     }
 
-    public List<Atividade> getSetAtividadeList(int i) {
-        String  [] disciplinas = new String[]{}
-    }
+    /*public List<Atividade> getSetAtividadeList(int i) {
+        String  [] disciplinas = new String[]{};
+    }*/
 }
 

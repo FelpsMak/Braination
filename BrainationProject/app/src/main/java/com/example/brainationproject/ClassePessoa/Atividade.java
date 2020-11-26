@@ -15,7 +15,6 @@ public class Atividade {
     }
 
 
-
     public String getDisciplina() {
         return disciplina;
     }
@@ -40,4 +39,12 @@ public class Atividade {
         this.data = data;
     }
 
+    @Override
+    public String toString() {
+        return "Atividade{" +
+                "disciplina='" + disciplina + '\'' +
+                ", titulo='" + titulo + '\'' +
+                ", data='" + data + '\'' +
+                '}';
+    }
 }

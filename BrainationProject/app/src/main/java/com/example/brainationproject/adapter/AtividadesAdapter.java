@@ -19,68 +19,64 @@ import java.util.List;
 public class AtividadesAdapter extends RecyclerView.Adapter<AtividadesAdapter.MyViewHolder> {
     private List<Atividade> mList;
     private LayoutInflater mLayoutInflater;
+    private Context context;
     private RecyclerViewOnClickListenerHack mRecyclerViewOnClickListenerHack;
 
-    public AtividadesAdapter(Context c, List<Atividade> l){
-        mList=l;
+    public AtividadesAdapter(Context c, List<Atividade> l) {
+        mList = l;
+        context = c;
         mLayoutInflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType){
+    public MyViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         Log.i("LOG", "onCreateViewHolder");
         View v = mLayoutInflater.inflate(R.layout.item_atividade, viewGroup, false);
-        MyViewHolder mvh=new MyViewHolder(v);
+        MyViewHolder mvh = new MyViewHolder(v);
 
         return mvh;
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder myViewHolder, int position){
+    public void onBindViewHolder(MyViewHolder myViewHolder, int position) {
         Log.i("LOG", "onBindViewHolder");
-        myViewHolder.ivAtividade.setImageResource( mList.get(position).getPhoto() );
         myViewHolder.tvDisciplina.setText(mList.get(position).getDisciplina());
         myViewHolder.tvTitulo.setText(mList.get(position).getTitulo());
         myViewHolder.tvData.setText(mList.get(position).getData());
     }
 
     @Override
-    public int getItemCount(){
+    public int getItemCount() {
         return mList.size();
     }
 
-    public void setmRecyclerViewOnClickListenerHack(RecyclerViewOnClickListenerHack r){
+    public void setmRecyclerViewOnClickListenerHack(RecyclerViewOnClickListenerHack r) {
         mRecyclerViewOnClickListenerHack = r;
     }
 
-    public void addListItem(Atividade c, int position){
+    public void addListItem(Atividade c, int position) {
         mList.add(c);
         notifyItemInserted(position);
     }
 
-    public void removeListItem(int position){
+    public void removeListItem(int position) {
         mList.remove(position);
         notifyItemRemoved(position);
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         public ImageView ivAtividade;
         public TextView tvDisciplina, tvTitulo, tvData;
-        public MyViewHolder(View itemView){
+
+        public MyViewHolder(View itemView) {
             super(itemView);
-                ivAtividade = (ImageView) itemView.findViewById(R.id.iv_atividade);
-                tvDisciplina = (TextView) itemView.findViewById(R.id.tv_disciplina);
-                tvTitulo = (TextView) itemView.findViewById(R.id.tv_titulo);
-                tvData = (TextView) itemView.findViewById(R.id.tv_data);
-
-                itemView.setOnClickListener(this);
+            ivAtividade = (ImageView) itemView.findViewById(R.id.iv_atividade);
+            tvDisciplina = (TextView) itemView.findViewById(R.id.tv_disciplina);
+            tvTitulo = (TextView) itemView.findViewById(R.id.tv_titulo);
+            tvData = (TextView) itemView.findViewById(R.id.tv_data);
+            
         }
 
-        @Override
-        public void onClick(View v) {
-            if(mRecyclerViewOnClickListenerHack !=null){
-                mRecyclerViewOnClickListenerHack.onClickListener(v, getPosition());
-            }
-        }
+
     }
 }
