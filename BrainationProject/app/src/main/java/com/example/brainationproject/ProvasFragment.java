@@ -45,26 +45,27 @@ public class ProvasFragment extends Fragment implements RecyclerViewOnClickListe
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        setHasOptionsMenu(true);
         return inflater.inflate(R.layout.fragment_provas, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-        mList=new ArrayList<Provas>();
+        mList=new ArrayList<>();
 
         auth = FirebaseAuth.getInstance();
 
 
         btAdd = view.findViewById(R.id.activity_lista_aluno_bt_add_2);
 
+        mRecyclerView = view.findViewById(R.id.rv_list_provas);
+
         databaseReference = FirebaseDatabase.getInstance().getReference("Pessoa");
-        databaseReference.child(auth.getUid().toString()).child("Atividades").addValueEventListener(new ValueEventListener() {
+        databaseReference.child(auth.getUid().toString()).child("Provas").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                mList = new ArrayList<Provas>();
+                mList = new ArrayList<>();
                 if (snapshot.exists()){
                     for (DataSnapshot dado : snapshot.getChildren()){
                         String titulo = dado.child("titulo").getValue().toString();
@@ -87,7 +88,6 @@ public class ProvasFragment extends Fragment implements RecyclerViewOnClickListe
 
             }
         });
-        mRecyclerView = view.findViewById(R.id.rv_list_provas);
         btAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

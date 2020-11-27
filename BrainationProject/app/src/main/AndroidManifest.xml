@@ -12,25 +12,25 @@
         <activity android:name=".GradeHorarioActivity">
 
         </activity>
-        <activity android:name=".AdicionarProvasActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".AdicionarAtividadeActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".AdicionarAvisosActivity" android:screenOrientation="portrait">
+        <activity android:name=".AdicionarProvasActivity" android:screenOrientation="fullSensor"></activity>
+        <activity android:name=".AdicionarAtividadeActivity" android:screenOrientation="fullSensor"></activity>
+        <activity android:name=".AdicionarAvisosActivity" android:screenOrientation="fullSensor">
 
         </activity>
-        <activity android:name=".PerfilAlunoActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".FaleConoscoActivity" android:screenOrientation="portrait">
+        <activity android:name=".PerfilAlunoActivity" android:screenOrientation="fullSensor"/>
+        <activity android:name=".FaleConoscoActivity" android:screenOrientation="fullSensor">
 
         </activity>
-        <activity android:name=".LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".LoginActivity" android:screenOrientation="fullSensor"/>
 
 
 
         <activity
             android:name=".ListaAlunoActivity"
-            android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
-        <activity android:name=".RegisteralunoActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ForgotActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+            android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="fullSensor"/>
+        <activity android:name=".RegisteralunoActivity" android:screenOrientation="fullSensor"/>
+        <activity android:name=".ForgotActivity" android:screenOrientation="fullSensor"/>
+        <activity android:name=".MainActivity" android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

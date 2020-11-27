@@ -40,6 +40,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/icone_adicionar" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_list_provas"
             android:layout_width="0dp"

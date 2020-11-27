@@ -19,8 +19,8 @@ import android.widget.Toast;
 
 import com.example.brainationproject.ClassePessoa.Aviso;
 import com.example.brainationproject.adapter.AtividadeItemViewHolder;
-import com.example.brainationproject.adapter.AtividadesAdapter;
 import com.example.brainationproject.adapter.AvisosAdapter;
+import com.example.brainationproject.adapter.ProvasAdapter;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
@@ -73,7 +73,6 @@ public class AvisosFragment extends Fragment implements RecyclerViewOnClickListe
                         String data = dado.child("data").getValue().toString();
                         Aviso avs = new Aviso(texto, data);
                         mList.add(avs);
-
                     }
                     System.out.println(mList.toString());
                     avisosAdapter = new AvisosAdapter(getContext(), mList);
@@ -92,7 +91,7 @@ public class AvisosFragment extends Fragment implements RecyclerViewOnClickListe
         btAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(), AdicionarAvisosActivity.class);
+                Intent intent = new Intent(getContext(), AdicionarProvasActivity.class);
                 startActivity(intent);
             }
         });
@@ -104,7 +103,7 @@ public class AvisosFragment extends Fragment implements RecyclerViewOnClickListe
     public void onClickListener(View view, int position) {
         Toast.makeText(getActivity(), "Position: " + position, Toast.LENGTH_SHORT).show();
 
-        AvisosAdapter adapter = (AvisosAdapter) mRecyclerView.getAdapter();
+        ProvasAdapter adapter = (ProvasAdapter) mRecyclerView.getAdapter();
         adapter.removeListItem(position);
     }
 }
