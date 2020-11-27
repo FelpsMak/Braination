@@ -18,8 +18,8 @@
 
         <ImageButton
             android:id="@+id/activity_adicionar_aviso_bt_voltar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginStart="16dp"
             android:background="@android:color/transparent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -139,7 +139,6 @@
             android:layout_height="0dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/roboto_slab_regular"
-            android:inputType="date"
             android:paddingHorizontal="10dp"
             android:textAlignment="center"
             android:textColor="#000"

@@ -19,16 +19,17 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/wallpaperescuro" />
 
-        <ImageButton
-            android:id="@+id/activity_lista_aluno_bt_delete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginBottom="16dp"
-            android:background="@android:color/transparent"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_provas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/icone_lixeira" />
+            app:layout_constraintTop_toTopOf="parent" />
+
 
         <ImageButton
             android:id="@+id/activity_lista_aluno_bt_add_2"
@@ -41,15 +42,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/icone_adicionar" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_list_provas"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:elevation="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+
 
 
 

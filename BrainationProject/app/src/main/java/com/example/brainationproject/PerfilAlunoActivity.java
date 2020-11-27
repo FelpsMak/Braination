@@ -31,7 +31,7 @@ import java.util.List;
 import java.util.UUID;
 
 public class PerfilAlunoActivity extends AppCompatActivity {
-    EditText edtNome, edtEmail, edtSenha;
+    EditText edtNome;
     Button btSalvar;
     ImageButton btVoltar;
     private FirebaseAuth mAuth;
@@ -48,16 +48,13 @@ public class PerfilAlunoActivity extends AppCompatActivity {
         eventoDatabase();
         mAuth = FirebaseAuth.getInstance();
         btVoltar = findViewById(R.id.activity_perfil_bt_voltar);
-        edtEmail = findViewById(R.id.activity_perfil_edt_email);
         edtNome = findViewById(R.id.activity_perfil_edt_nome);
-        edtSenha = findViewById(R.id.activity_perfil_edt_senha);
         btSalvar = findViewById(R.id.activity_perfil_bt_salvar);
 
         btSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 databaseReference.child("Pessoa").child(mAuth.getUid()).child("nome").setValue(edtNome.getText().toString().trim());
-                databaseReference.child("Pessoa").child(mAuth.getUid()).child("email").setValue(edtEmail.getText().toString().trim());
                 finish();
             }
         });
@@ -75,10 +72,8 @@ public class PerfilAlunoActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String nome = dataSnapshot.child("Pessoa").child(mAuth.getUid()).child("nome").getValue(String.class);
-                String email = dataSnapshot.child("Pessoa").child(mAuth.getUid()).child("email").getValue(String.class);
 
                 edtNome.setText(nome);
-                edtEmail.setText(email);
 
             }
 

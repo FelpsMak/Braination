@@ -18,8 +18,8 @@
 
         <ImageButton
             android:id="@+id/activity_grades_bt_voltar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginStart="16dp"
             android:background="@android:color/transparent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -757,109 +757,6 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="15dp">
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guide__21"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.38" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guide__22"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.34" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guide__23"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.22" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guide__24"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.18" />
-
-                <EditText
-                    android:id="@+id/activity_grades_edt_materia__6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/border_gray"
-                    android:backgroundTint="#ededed"
-                    android:fontFamily="@font/roboto_slab_regular"
-                    android:inputType="text"
-                    android:paddingHorizontal="3dp"
-                    android:paddingVertical="6dp"
-                    android:text="LP3"
-                    android:textAlignment="center"
-                    android:textColor="#000"
-                    android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/guide__21"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/border_gray"
-                    android:backgroundTint="#ededed"
-                    android:fontFamily="@font/roboto_slab_regular"
-                    android:paddingHorizontal="3dp"
-                    android:paddingVertical="6dp"
-                    android:text="6º"
-                    android:textAlignment="center"
-                    android:textColor="#000"
-                    android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/guide__22"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="@+id/guide__23"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
-
-                <EditText
-                    android:id="@+id/activity_grades_edt_hora__6"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/border_gray"
-                    android:backgroundTint="#ededed"
-                    android:fontFamily="@font/roboto_slab_regular"
-                    android:inputType="time"
-                    android:paddingHorizontal="3dp"
-                    android:paddingVertical="6dp"
-                    android:text="13h40"
-                    android:textAlignment="center"
-                    android:textColor="#000"
-                    android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/guide__24"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <ImageButton
-                android:id="@+id/activity_grades_bt_ok-edit"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@android:color/transparent"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:scaleType="fitCenter"
-                android:elevation="10dp"
-                app:srcCompat="@drawable/ok_icon" />
 
 
         </LinearLayout>

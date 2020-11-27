@@ -18,8 +18,8 @@
 
         <ImageButton
             android:id="@+id/activity_adicionar_prova_bt_voltar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_marginStart="16dp"
             android:background="@android:color/transparent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -83,7 +83,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_slab_regular"
-                    android:text="Disciplina da atividade"
+                    android:text="Disciplina da Prova"
                     android:textColor="#000"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +91,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/skkk"
+                    android:id="@+id/edit_text_disciplina_prova"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="5dp"
@@ -135,7 +135,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/skk"
+                    android:id="@+id/edit_text_titulo_prova"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="5dp"
@@ -178,17 +178,16 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/sg"
+                    android:id="@+id/edit_text_dia_prova"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="1dp"
                     android:background="@drawable/border_gray"
                     android:fontFamily="@font/roboto_slab_regular"
-                    android:inputType="date"
                     android:paddingHorizontal="10dp"
                     android:paddingVertical="5dp"
-                    android:text="  /  /  "
+                    android:text=""
                     android:textAlignment="center"
                     android:textColor="#000"
                     android:textSize="18sp"
@@ -223,7 +222,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/sas"
+                    android:id="@+id/edit_text_assunto_prova"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="5dp"

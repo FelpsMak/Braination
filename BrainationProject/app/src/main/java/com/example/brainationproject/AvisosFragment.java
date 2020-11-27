@@ -91,7 +91,7 @@ public class AvisosFragment extends Fragment implements RecyclerViewOnClickListe
         btAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(), AdicionarProvasActivity.class);
+                Intent intent = new Intent(getContext(), AdicionarAvisosActivity.class);
                 startActivity(intent);
             }
         });

@@ -67,7 +67,6 @@ public class ListaAlunoActivity extends AppCompatActivity
         btGrade = findViewById(R.id.nav_home);
         btFaleConosco = findViewById(R.id.nav_gallery);
         btPerfil = findViewById(R.id.bt_ir_perfil);
-        btDelete = findViewById(R.id.activity_lista_aluno_bt_delete);
 
         navigationView.setNavigationItemSelectedListener(this);
         btPerfil.setOnClickListener(new View.OnClickListener() {
