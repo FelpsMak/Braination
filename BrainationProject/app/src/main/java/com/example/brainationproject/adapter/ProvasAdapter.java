@@ -41,7 +41,6 @@ public class ProvasAdapter extends RecyclerView.Adapter<ProvasAdapter.MyViewHold
     @Override
     public void onBindViewHolder(MyViewHolder myViewHolder, int position) {
         Log.i("LOG", "onBindViewHolder");
-        myViewHolder.tvTitulo.setText(mList.get(position).getTitulo());
         myViewHolder.tvData.setText(mList.get(position).getData());
         myViewHolder.tvAssunto.setText(mList.get(position).getAssunto());
         myViewHolder.tvDisciplina.setText(mList.get(position).getDisciplina());
@@ -67,11 +66,10 @@ public class ProvasAdapter extends RecyclerView.Adapter<ProvasAdapter.MyViewHold
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView tvTitulo, tvData, tvAssunto, tvDisciplina;
+        public TextView  tvData, tvAssunto, tvDisciplina;
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            tvTitulo = (TextView) itemView.findViewById(R.id.tv_titulo_prova);
             tvData = (TextView) itemView.findViewById(R.id.tv_data_prova);
             tvAssunto = (TextView) itemView.findViewById(R.id.tv_assunto_prova);
             tvDisciplina = (TextView) itemView.findViewById(R.id.tv_disciplina_prova);

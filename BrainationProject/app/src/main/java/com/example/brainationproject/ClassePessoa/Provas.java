@@ -2,7 +2,6 @@ package com.example.brainationproject.ClassePessoa;
 
 public class Provas {
 
-    private String titulo;
     private String disciplina;
     private String assunto;
     private String data;
@@ -10,20 +9,10 @@ public class Provas {
     public Provas() {
     }
 
-    public Provas(String titulo, String data, String disciplina, String assunto) {
-        this.titulo = titulo;
+    public Provas(String data, String disciplina, String assunto) {
         this.data = data;
         this.disciplina = disciplina;
         this.assunto = assunto;
-    }
-
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
     }
 
     public String getDisciplina() { return disciplina; }
@@ -48,7 +37,6 @@ public class Provas {
     @Override
     public String toString() {
         return "Atividade{" +
-                ", titulo='" + titulo + '\'' +
                 ", data='" + data + '\'' +
                 ", assunto='" + assunto + '\'' +
                 ", disciplina='" + disciplina + '\'' +
